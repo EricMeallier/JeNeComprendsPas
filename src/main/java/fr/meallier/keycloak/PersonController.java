@@ -15,6 +15,11 @@ public class PersonController {
     @Autowired
     private MyValue myValue;
 
+    @GetMapping(path = "/hello")
+    public String hello() {
+        return "Hello World";
+    }
+
     @GetMapping(path = "/remote")
     public String remote(MyRemoteController remoteController) {
         logger.warn(">>>>personController.myValue: {}",myValue.getValue());
