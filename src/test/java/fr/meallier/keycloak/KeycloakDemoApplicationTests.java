@@ -1,4 +1,4 @@
-package fr.meallier.keycloakDemo;
+package fr.meallier.keycloak;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
