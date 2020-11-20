@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 @Service
 public class MyRemoteController {
@@ -14,7 +15,7 @@ public class MyRemoteController {
     private static final Logger logger = LoggerFactory.getLogger(MyRemoteController.class);
 
     @Autowired
-    private KeycloakRestTemplate template;
+    private RestTemplate template;
 
     @Autowired
     private MyValue myValue;
